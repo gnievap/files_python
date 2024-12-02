@@ -12,3 +12,7 @@ def leer_pdf(archivo_pdf):
             pagina_actual = lector_pdf.pages[pagina] 
             texto += pagina_actual.extract_text() 
     return texto
+
+archivo_pdf = '35_82_Q1_FUNDAMENTOS DE PROGRAMACIÓN_1720077871.pdf' 
+contenido = leer_pdf(archivo_pdf) 
+print(contenido)
